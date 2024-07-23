@@ -12,6 +12,54 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            <!-- if ($_SESSION['aid']) : -->
+
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.php">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Family Members</span>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="add-family-member.php">Add</a>
+                        <a class="collapse-item" href="manage-family-members.php">Manage</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-virus"></i>
+                    <span>BP</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="add-bp-details.php">Add</a>
+                        <a class="collapse-item" href="manage-bp-details.php">Manage</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Report</span>
+                </a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="bwdates-report-ds.php">B/w Dates Report</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- else : -->
+
             <hr class="sidebar-divider">
 
             <li class="nav-item">
@@ -36,6 +84,7 @@
                     <span>Login</span></a>
             </li>
 
+            <!-- endif; -->
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

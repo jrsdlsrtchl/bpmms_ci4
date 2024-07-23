@@ -9,22 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BP Monitoring Management System | User Login</title>
+    <title>BP Monitoring Management System | ??</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url() ?>public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <style type="text/css">
-        label {
-            font-size: 16px;
-            font-weight: bold;
-            color: #000;
-        }
-    </style>
-
+    <link href="<?= base_url() ?>public/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -33,7 +25,9 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <?php include_once('includes/sidebar.php'); ?>
+        <!-- Sidebar -->
+        <?= $this->include("layout/sidebar") ?>
+        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -42,7 +36,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include_once('includes/topbar.php'); ?>
+                <?= $this->include("layout/topbar") ?>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->

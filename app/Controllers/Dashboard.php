@@ -5,11 +5,11 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Index extends BaseController
+class Dashboard extends BaseController
 {
     public function index()
     {
 
-        return view('index/page');
+        return view("dashboard/dashboard");
     }
 }
