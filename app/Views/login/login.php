@@ -69,7 +69,7 @@
                                         <div class="form-group">
                                             <label>Password</label>
                                             <input type="password" class="form-control" id="userpassword" name="userpassword" placeholder="Enter your paassword" required="true">
-                                            <a href="password-recovery.php">Forgot Password</a>
+                                            <a href="<?= site_url('forgotpassword') ?>">Forgot Password</a>
                                         </div>
 
                                         <div class="form-group">

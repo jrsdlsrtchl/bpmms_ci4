@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class FamilyMembers extends BaseController
+class BloodPressure extends BaseController
 {
     public function index()
     {
@@ -14,12 +14,12 @@ class FamilyMembers extends BaseController
     public function add()
     {
 
-        return view("familymembers/add");
+        return view("bloodpressure/add");
     }
 
     public function manage()
     {
 
-        return view("familymembers/manage");
+        return view("bloodpressure/manage");
     }
 }

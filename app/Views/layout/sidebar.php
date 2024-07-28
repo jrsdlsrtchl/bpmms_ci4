@@ -15,7 +15,7 @@
             <!-- if ($_SESSION['aid']) : -->
 
             <li class="nav-item">
-                <a class="nav-link" href="dashboard.php">
+                <a class="nav-link" href="<?= site_url('dashboard/index') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -27,8 +27,8 @@
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="add-family-member.php">Add</a>
-                        <a class="collapse-item" href="manage-family-members.php">Manage</a>
+                        <a class="collapse-item" href="<?= site_url('familymembers/add') ?>">Add</a>
+                        <a class="collapse-item" href="<?= site_url('familymembers/manage') ?>">Manage</a>
                     </div>
                 </div>
             </li>
@@ -40,8 +40,8 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="add-bp-details.php">Add</a>
-                        <a class="collapse-item" href="manage-bp-details.php">Manage</a>
+                        <a class="collapse-item" href="<?= site_url('bloodpressure/add') ?>">Add</a>
+                        <a class="collapse-item" href="<?= site_url('bloodpressure/manage') ?>">Manage</a>
                     </div>
                 </div>
             </li>
@@ -53,7 +53,7 @@
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="bwdates-report-ds.php">B/w Dates Report</a>
+                        <a class="collapse-item" href="<?= site_url('report/index') ?>">B/w Dates Report</a>
                     </div>
                 </div>
             </li>
@@ -63,14 +63,14 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="<?= site_url('index') ?>">
                     <i class="fas fa-home"></i>
                     <span>Home</span></a>
             </li>
             <hr class="sidebar-divider">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="registration.php">
+                <a class="nav-link" href="<?= site_url('registration') ?>">
                     <i class="fas fa-users"></i>
                     <span>Signup/ Registration</span></a>
             </li>
@@ -79,7 +79,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link" href="login.php">
+                <a class="nav-link" href="<?= site_url('login') ?>">
                     <i class="fas fa-users"></i>
                     <span>Login</span></a>
             </li>

@@ -1,3 +1,9 @@
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
 <!-- Footer -->
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
@@ -7,12 +13,6 @@
     </div>
 </footer>
 <!-- End of Footer -->
-
-</div>
-<!-- End of Content Wrapper -->
-
-</div>
-<!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
 <?= $this->include("layout/footer2") ?>
