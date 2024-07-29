@@ -4,7 +4,7 @@
 
 <!-- Page Heading -->
 <h1 class="h3 mb-4 text-gray-800">BP Monitoring Management System</h1>
-<form name="newtesting" method="post">
+<form name="newtesting" method="post" action="<?= site_url('registration/adduser') ?>">
     <div class="row">
 
         <div class="col-lg-6">
@@ -42,7 +42,6 @@
             </div>
 
         </div>
-
 
     </div>
 </form>

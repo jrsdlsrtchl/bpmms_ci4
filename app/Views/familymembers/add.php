@@ -4,7 +4,7 @@
 
 <!-- Page Heading -->
 <h1 class="h3 mb-4 text-gray-800">Add Family Member</h1>
-<form name="addphlebotomist" method="post">
+<form name="addphlebotomist" method="post" action="<?= "" ?>">
     <div class="row">
 
         <div class="col-lg-8">
@@ -18,7 +18,6 @@
                     <div class="form-group">
                         <label>Member Name</label>
                         <input type="text" class="form-control" id="membername" name="membername" placeholder="Enter Family Member Name" required="true">
-
                     </div>
 
                     <div class="form-group">

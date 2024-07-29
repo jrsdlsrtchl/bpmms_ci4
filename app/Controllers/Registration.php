@@ -11,4 +11,11 @@ class Registration extends BaseController
     {
         return view("registration/registration");
     }
+
+    public function addUser()
+    {
+        if ($this->request->getMethod() == 'post') {
+            echo "Success";
+        }
+    }
 }
