@@ -13,9 +13,5 @@ class Login extends BaseController
         return view("login/login");
     }
 
-    public function checkEmail()
-    {
-
-        //
-    }
+    
 }

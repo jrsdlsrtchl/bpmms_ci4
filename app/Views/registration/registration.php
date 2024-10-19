@@ -4,7 +4,7 @@
 
 <!-- Page Heading -->
 <h1 class="h3 mb-4 text-gray-800">BP Monitoring Management System</h1>
-<form name="newtesting" method="post" action="<?= site_url('registration/adduser') ?>">
+<form method="post" action="">
     <div class="row">
 
         <div class="col-lg-6">
@@ -26,7 +26,8 @@
                     </div>
                     <div class="form-group">
                         <label>Email id</label>
-                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Enter your email id" required="true" onBlur="emailAvailability()"> <span id="email-availability-status" style="font-size:12px;"></span>
+                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Enter your email id" required="true">
+                        <span id="email-availability-status" style="font-size:12px;"></span>
                     </div>
 
                     <div class="form-group">

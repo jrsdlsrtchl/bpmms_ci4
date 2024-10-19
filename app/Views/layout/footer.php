@@ -27,12 +27,34 @@
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url() ?>public/js/sb-admin-2.min.js"></script>
 
-<!-- Page level plugins -->
-<script src="<?= base_url() ?>public/vendor/chart.js/Chart.min.js"></script>
-
-<!-- Page level custom scripts -->
-<script src="<?= base_url() ?>public/js/demo/chart-area-demo.js"></script>
-<script src="<?= base_url() ?>public/js/demo/chart-pie-demo.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#emailid').on('keyup', function() {
+            var email = $(this).val();
+            if (email.length > 0) {
+                $.ajax({
+                    url: '<?= site_url('registration/checkemail') ?>',
+                    type: 'post',
+                    data: {
+                        emailid: email
+                    },
+                    success: function(response) {
+                        if (response === 'exists') {
+                            $('#email-availability-status').html('<span style="color:red;">Email already exists</span>');
+                            $('#submit').attr('disabled', true);
+                        } else {
+                            $('#email-availability-status').html('<span style="color:green;">Email available</span>');
+                            $('#submit').attr('disabled', false);
+                        }
+                    }
+                });
+            } else {
+                $('#email-availability-status').html('');
+                $('#submit').attr('disabled', false);
+            }
+        });
+    });
+</script>
 
 </body>
 
